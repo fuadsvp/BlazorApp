@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUD", "BlazorCRUD\BlazorCRUD.csproj", "{6A1F7369-A5F6-4B5A-AE9E-414903D6299C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUD", "BlazorCRUD\BlazorCRUD.csproj", "{6A1F7369-A5F6-4B5A-AE9E-414903D6299C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Presentation", "00 - Presentation", "{7F13388A-AEAE-469C-B8FC-6F8380C72FE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A1F7369-A5F6-4B5A-AE9E-414903D6299C} = {7F13388A-AEAE-469C-B8FC-6F8380C72FE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B4F04CB-83D5-4B0D-A1FA-58A9F124A4D0}

@@ -11,7 +11,7 @@ namespace BlazorCRUD.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-
+            Database.EnsureCreated();
         }
         public DbSet<EmployeeInfo> Employees { get; set; }
     }
