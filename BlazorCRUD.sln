@@ -5,7 +5,15 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUD", "BlazorCRUD\BlazorCRUD.csproj", "{6A1F7369-A5F6-4B5A-AE9E-414903D6299C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Presentation", "00 - Presentation", "{7F13388A-AEAE-469C-B8FC-6F8380C72FE5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{7F13388A-AEAE-469C-B8FC-6F8380C72FE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Domain", "02 - Domain", "{10EEAF02-AA36-4CEC-96AD-ADFCC858ADF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Tests", "00 - Tests", "{4DD22E72-9149-4209-9426-92E374104389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUD.Domain", "BlazorCRUD.Domain\BlazorCRUD.Domain.csproj", "{6309EA68-6A48-414C-885D-A1C02F9342D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - DataAccess", "03 - DataAccess", "{7D6F4446-A633-425B-8C77-3F723A8D7B26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +25,17 @@ Global
 		{6A1F7369-A5F6-4B5A-AE9E-414903D6299C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A1F7369-A5F6-4B5A-AE9E-414903D6299C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A1F7369-A5F6-4B5A-AE9E-414903D6299C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6309EA68-6A48-414C-885D-A1C02F9342D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6309EA68-6A48-414C-885D-A1C02F9342D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6309EA68-6A48-414C-885D-A1C02F9342D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6309EA68-6A48-414C-885D-A1C02F9342D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6A1F7369-A5F6-4B5A-AE9E-414903D6299C} = {7F13388A-AEAE-469C-B8FC-6F8380C72FE5}
+		{6309EA68-6A48-414C-885D-A1C02F9342D3} = {10EEAF02-AA36-4CEC-96AD-ADFCC858ADF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B4F04CB-83D5-4B0D-A1FA-58A9F124A4D0}
