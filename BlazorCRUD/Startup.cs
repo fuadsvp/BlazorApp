@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using BlazorCRUD.Data;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using BlazorCRUD.DI;
 
 namespace BlazorCRUD
 {
@@ -32,10 +33,8 @@ namespace BlazorCRUD
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
             services.AddScoped<EmployeeService>();
-            services.AddDbContext<ApplicationDbContext>(Options =>
-            {
-                Options.UseSqlServer(Configuration.GetConnectionString("UserDatabase"));
-            });
+            string sqlstring = Configuration.GetConnectionString("UserDatabase");
+            services.AddDependencies(SqlString: sqlstring);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

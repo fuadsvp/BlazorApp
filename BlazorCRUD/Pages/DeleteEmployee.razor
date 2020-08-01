@@ -1,4 +1,5 @@
 ﻿@page "/DeleteEmployee/{CurrentID}"
+@using BlazorCRUD.ViewModels
 @using BlazorCRUD.Data
 @inject EmployeeService objEmpService
 @inject NavigationManager NavigationManager
@@ -45,7 +46,7 @@
 @code {
     [Parameter]
     public string CurrentID { get; set; }
-    EmployeeInfo objEmp = new EmployeeInfo();
+    EmployeeVM objEmp = new EmployeeVM();
 
     protected override async Task OnInitializedAsync()
     {

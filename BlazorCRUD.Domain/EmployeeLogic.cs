@@ -36,5 +36,10 @@ namespace BlazorCRUD.Domain
         {
             DataAccessWrapper.DeleteEmployee(key);
         }
+
+        public void DeleteEmployee(Employee employee)
+        {
+            DataAccessWrapper.DeleteEmployee(employee);
+        }
     }
 }

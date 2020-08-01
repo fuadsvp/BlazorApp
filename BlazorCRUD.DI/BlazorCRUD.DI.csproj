@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <UserSecretsId>fb7dc549-b7e1-48b6-b76e-5333be19edb7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorCRUD.DataAccess\BlazorCRUD.DataAccess.csproj" />
+    <ProjectReference Include="..\BlazorCRUD.Domain\BlazorCRUD.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

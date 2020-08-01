@@ -26,7 +26,7 @@ namespace BlazorCRUD.DataAccess
         {
             try
             {
-                bool isEmployeeAlreadyExists = !(Employee.GetEmployee(employee.Id) is null);
+                bool isEmployeeAlreadyExists = !(Employee.GetEmployee(employee.EmployeeId) is null);
                 if (isEmployeeAlreadyExists)
                     throw new System.Exception("You cannot create already existing employee");
 
@@ -44,7 +44,7 @@ namespace BlazorCRUD.DataAccess
         {
             try
             {
-                bool isEmployeeAlreadyExists = !(Employee.GetEmployee(employee.Id) is null);
+                bool isEmployeeAlreadyExists = !(Employee.GetEmployee(employee.EmployeeId) is null);
                 if (!isEmployeeAlreadyExists)
                     throw new System.Exception("You cannot update non-existing employee");
 

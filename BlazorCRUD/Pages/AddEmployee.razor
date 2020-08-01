@@ -1,5 +1,6 @@
 ﻿@page "/AddEmployee"
 @using BlazorCRUD.Data
+@using BlazorCRUD.ViewModels 
 @inject EmployeeService objEmpService
 @inject NavigationManager NavigationManager
 
@@ -42,7 +43,7 @@
 </form>
 
 @code {
-    EmployeeInfo objEmp = new EmployeeInfo();
+    EmployeeVM objEmp = new EmployeeVM();
 
     protected void CreateEmployee()
     {

@@ -1,5 +1,6 @@
 ﻿@page "/EditEmployee/{CurrentID}"
 @using BlazorCRUD.Data
+@using BlazorCRUD.ViewModels
 @inject EmployeeService objEmpService
 @inject NavigationManager NavigationManager
 
@@ -9,10 +10,10 @@
 <form>
     <div class="row">
         <div class="Col-md-8">
-            
-                <div class="form-group">
-                    <input form="Name" class="form-control" @bind="@objEmp.EmployeeId"/>
-                </div>
+
+            <div class="form-group">
+                <input form="Name" class="form-control" @bind="@objEmp.EmployeeId" />
+            </div>
             <div class="form-group">
                 <label for="Name" class="control-label">Name</label>
                 <input form="Name" class="form-control" @bind="@objEmp.Name" />
@@ -50,7 +51,7 @@
 @code {
     [Parameter]
     public string CurrentID { get; set; }
-    EmployeeInfo objEmp = new EmployeeInfo();
+    EmployeeVM objEmp = new EmployeeVM();
 
     protected override async Task OnInitializedAsync()
     {
@@ -66,7 +67,4 @@
     {
         NavigationManager.NavigateTo("Employee");
     }
-
-
 }
-
