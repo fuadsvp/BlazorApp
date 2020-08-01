@@ -13,6 +13,7 @@ namespace BlazorCRUD.Data
         {
             Database.EnsureCreated();
         }
+
         public DbSet<EmployeeInfo> Employees { get; set; }
     }
 }

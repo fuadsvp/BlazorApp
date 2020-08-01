@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlazorCRUD.Domain
+namespace BlazorCRUD.Core
 {
     public class Class1
     {
