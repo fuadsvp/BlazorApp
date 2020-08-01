@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorCRUD.Core\BlazorCRUD.Core.csproj" />
+    <ProjectReference Include="..\BlazorCRUD.DataAccess\BlazorCRUD.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

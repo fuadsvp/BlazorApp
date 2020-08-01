@@ -1,5 +1,6 @@
 ﻿@page "/employee"
 @using BlazorCRUD.Data
+@using BlazorCRUD.ViewModels
 @inject EmployeeService objEmpService
 
 <NavLink class="nav-link" href="AddEmployee">
@@ -25,23 +26,23 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach(var emp in objEmp)
+            @foreach (var emp in objEmp)
             {
-            <tr>
-                <td>@emp.EmployeeId</td>
-                <td>@emp.Name</td>
-                <td>@emp.Gender</td>
-                <td>@emp.Country</td>
-                <td>@emp.City</td>
-                <td>
-                    <a class="nav-link" href="EditEmployee/@emp.EmployeeId">
-                        <span class="oi oi-pencil" aria-hidden="true"></span>Edit
-                    </a>
-                    <a class="nav-link" href="DeleteEmployee/@emp.EmployeeId">
-                        <span class="oi oi-trash" aria-hidden="true"></span>Delete  
-                    </a>
-                </td>
-            </tr>
+                <tr>
+                    <td>@emp.EmployeeId</td>
+                    <td>@emp.Name</td>
+                    <td>@emp.Gender</td>
+                    <td>@emp.Country</td>
+                    <td>@emp.City</td>
+                    <td>
+                        <a class="nav-link" href="EditEmployee/@emp.EmployeeId">
+                            <span class="oi oi-pencil" aria-hidden="true"></span>Edit
+                        </a>
+                        <a class="nav-link" href="DeleteEmployee/@emp.EmployeeId">
+                            <span class="oi oi-trash" aria-hidden="true"></span>Delete
+                        </a>
+                    </td>
+                </tr>
             }
         </tbody>
 
@@ -49,10 +50,10 @@ else
 }
 
 @code {
-    List<EmployeeInfo> objEmp;
+    List<EmployeeVM> objEmp;
     protected override async Task OnInitializedAsync()
     {
-        objEmp = await Task.Run(() => objEmpService.GetEmployee());
+        objEmp = await Task.Run(() => objEmpService.GetEmployees());
     }
 
 }
