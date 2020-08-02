@@ -13,13 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUD.Domain", "Blazor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - DataAccess", "03 - DataAccess", "{7D6F4446-A633-425B-8C77-3F723A8D7B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUD.DataAccess", "BlazorCRUD.DataAccess\BlazorCRUD.DataAccess.csproj", "{3122FEAC-C917-4145-AF6D-08BE5636D35E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUD.DataAccess", "BlazorCRUD.DataAccess\BlazorCRUD.DataAccess.csproj", "{3122FEAC-C917-4145-AF6D-08BE5636D35E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Infrastructure", "00 - Infrastructure", "{60792FA9-229D-475C-A7F4-2CDFEDD3A21E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{60792FA9-229D-475C-A7F4-2CDFEDD3A21E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUD.Core", "BlazorCRUD.Core\BlazorCRUD.Core.csproj", "{25F43BE6-EA4A-4240-A7EC-49FF51C61BA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUD.Core", "BlazorCRUD.Core\BlazorCRUD.Core.csproj", "{25F43BE6-EA4A-4240-A7EC-49FF51C61BA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUD.DI", "BlazorCRUD.DI\BlazorCRUD.DI.csproj", "{98B7C373-85CD-48CD-8B41-F664C8F1CDA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCRUD.DI", "BlazorCRUD.DI\BlazorCRUD.DI.csproj", "{98B7C373-85CD-48CD-8B41-F664C8F1CDA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
